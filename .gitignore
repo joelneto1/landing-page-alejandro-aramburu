@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code local settings
+.claude/
+
+# Reference/mockup screenshots (not used in app)
+english.png
+espanhol.png
