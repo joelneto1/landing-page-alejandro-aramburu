@@ -33,11 +33,6 @@ export const FinalCTA = ({ checkoutUrl }: FinalCTAProps) => {
             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
           </a>
         </div>
-        <div className="gsap-fade mt-8 sm:mt-10">
-          <a href="#" className="font-sans-body text-xs sm:text-sm underline opacity-50 hover:opacity-70 transition-opacity">
-            {t("final_no_thanks")}
-          </a>
-        </div>
       </div>
     </section>
   );
