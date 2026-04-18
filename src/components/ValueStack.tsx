@@ -9,7 +9,7 @@ interface ValueStackProps {
 
 export const ValueStack = ({ checkoutUrl }: ValueStackProps) => {
   const sectionRef = useScrollReveal();
-  const counterRef = useCounterAnimation(181, 27, { duration: 1800, prefix: "US$ " });
+  const counterRef = useCounterAnimation(25, 9, { duration: 1800, prefix: "US$ ", suffix: ".99" });
   const { t } = useLanguage();
 
   return (
@@ -30,12 +30,12 @@ export const ValueStack = ({ checkoutUrl }: ValueStackProps) => {
         </div>
 
         <div className="gsap-fade bg-gradient-to-br from-blue-50 via-sky-50 to-blue-50 border-2 border-medical-blue rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 mb-6 sm:mb-8 relative overflow-hidden">
-          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-urgency-red text-white text-[10px] sm:text-xs font-sans-body font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full shadow-md">85% OFF</div>
+          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-urgency-red text-white text-[10px] sm:text-xs font-sans-body font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full shadow-md">60% OFF</div>
           <p className="font-sans-body text-medical-blue-dark text-[1.05rem] sm:text-lg mb-3 font-medium">{t("value_today")}</p>
           <div className="flex items-center justify-center gap-3 sm:gap-4 mb-2">
-            <span className="text-2xl sm:text-3xl md:text-4xl font-sans-body text-muted-foreground line-through opacity-60">US$ 181</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-sans-body text-muted-foreground line-through opacity-60">US$ 25</span>
             <span ref={counterRef} className="text-5xl sm:text-6xl md:text-8xl font-bold text-medical-blue-dark font-serif-display leading-none">
-              US$ 181
+              US$ 25
             </span>
           </div>
           <p className="font-sans-body text-trust-green font-bold text-xs sm:text-sm mb-3 sm:mb-4">{t("value_savings")}</p>

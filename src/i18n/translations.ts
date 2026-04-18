@@ -166,14 +166,14 @@ export const translations = {
   item_value: { es: "Valor:", en: "Value:" },
 
   // ── ValueStack ──
-  value_title: { es: "Valor Total: US$ 181", en: "Total Value: US$ 181" },
-  value_ebook: { es: "E-book Principal — US$ 97", en: "Main E-book — US$ 97" },
-  value_exercises: { es: "Guía de Ejercicios — US$ 47", en: "Exercise Guide — US$ 47" },
-  value_list: { es: "Lista de Sustitución — US$ 37", en: "Substitution List — US$ 37" },
+  value_title: { es: "Valor Total: US$ 25", en: "Total Value: US$ 25" },
+  value_ebook: { es: "E-book Principal — US$ 13", en: "Main E-book — US$ 13" },
+  value_exercises: { es: "Guía de Ejercicios — US$ 7", en: "Exercise Guide — US$ 7" },
+  value_list: { es: "Lista de Sustitución — US$ 5", en: "Substitution List — US$ 5" },
   value_today: { es: "Solo hoy, te llevas todo por:", en: "Today only, get everything for:" },
   value_savings: {
-    es: "Ahorro de US$ 154 — oferta por tiempo limitado",
-    en: "Save US$ 154 — limited time offer",
+    es: "Ahorro de US$ 15 — oferta por tiempo limitado",
+    en: "Save US$ 15 — limited time offer",
   },
   value_compare_1: {
     es: "Menos que unas medias de compresión de baja calidad.",
@@ -181,7 +181,7 @@ export const translations = {
   },
   value_compare_2: { es: "Menos que una sola consulta médica.", en: "Less than a single doctor's visit." },
   value_compare_3: { es: "Menos que el taxi hasta la farmacia.", en: "Less than a taxi to the pharmacy." },
-  value_cta: { es: "¡SÍ! QUIERO ACCESO POR US$ 27", en: "YES! I WANT ACCESS FOR US$ 27" },
+  value_cta: { es: "¡SÍ! QUIERO ACCESO POR US$ 9.99", en: "YES! I WANT ACCESS FOR US$ 9.99" },
   value_secure: {
     es: "🔒 Pago 100% seguro. Acceso inmediato por correo electrónico.",
     en: "🔒 100% secure payment. Instant access via email.",
@@ -201,7 +201,7 @@ export const translations = {
   testimonial_1_location: { es: "Buenos Aires, Argentina", en: "Austin, Texas" },
   testimonial_2_text: {
     es: "Mi médico ya había programado la cirugía. Estaba aterrorizado. Empecé el sistema como último intento. En 40 días, las várices disminuyeron tanto que el propio doctor me dijo: 'Don José, ya no necesita operarse.' Lloré como un niño en el consultorio.",
-    en: "I was two weeks away from vein surgery when my wife showed me this guide. I was skeptical, but desperate. After five weeks following the system, my specialist actually postponed the procedure — said the improvement was remarkable. That was four months ago and I still haven't needed it. Best $27 I've ever spent.",
+    en: "I was two weeks away from vein surgery when my wife showed me this guide. I was skeptical, but desperate. After five weeks following the system, my specialist actually postponed the procedure — said the improvement was remarkable. That was four months ago and I still haven't needed it. Best $9.99 I've ever spent.",
   },
   testimonial_2_name: { es: "José Carlos, 72 años", en: "Robert M., 73 years old" },
   testimonial_2_location: { es: "Lima, Perú", en: "Vancouver, Canada" },
@@ -241,7 +241,7 @@ export const translations = {
     es: "La diferencia entre esos dos futuros cuesta solo",
     en: "The difference between those two futures costs just",
   },
-  final_cta: { es: "QUIERO MI LIBERTAD — US$ 27", en: "I WANT MY FREEDOM — US$ 27" },
+  final_cta: { es: "QUIERO MI LIBERTAD — US$ 9.99", en: "I WANT MY FREEDOM — US$ 9.99" },
   final_no_thanks: {
     es: "No, gracias. Prefiero seguir como estoy.",
     en: "No, thanks. I'd rather stay as I am.",
@@ -262,7 +262,7 @@ export const translations = {
     es: "El Código de las Arterias Limpias",
     en: "The Clean Arteries Code",
   },
-  sticky_cta: { es: "ACCESO INMEDIATO — US$ 27", en: "INSTANT ACCESS — US$ 27" },
+  sticky_cta: { es: "ACCESO INMEDIATO — US$ 9.99", en: "INSTANT ACCESS — US$ 9.99" },
 } as const;
 
 export type TranslationKey = keyof typeof translations;

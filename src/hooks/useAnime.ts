@@ -12,7 +12,7 @@ const getThreshold = (desktop: number) =>
  * Animate a number counter (e.g., 181 → 27).
  * Returns a ref to attach to the element displaying the number.
  */
-export function useCounterAnimation(from: number, to: number, options?: { duration?: number; prefix?: string }) {
+export function useCounterAnimation(from: number, to: number, options?: { duration?: number; prefix?: string; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const hasRun = useRef(false);
 
@@ -21,10 +21,11 @@ export function useCounterAnimation(from: number, to: number, options?: { durati
     hasRun.current = true;
 
     const prefix = options?.prefix ?? "";
+    const suffix = options?.suffix ?? "";
 
     // If reduced motion, just set final value instantly
     if (prefersReducedMotion()) {
-      ref.current.textContent = `${prefix}${to}`;
+      ref.current.textContent = `${prefix}${to}${suffix}`;
       return;
     }
 
@@ -37,11 +38,11 @@ export function useCounterAnimation(from: number, to: number, options?: { durati
       easing: "easeOutExpo",
       update: () => {
         if (ref.current) {
-          ref.current.textContent = `${prefix}${obj.value}`;
+          ref.current.textContent = `${prefix}${obj.value}${suffix}`;
         }
       },
     });
-  }, [from, to, options?.duration, options?.prefix]);
+  }, [from, to, options?.duration, options?.prefix, options?.suffix]);
 
   useEffect(() => {
     if (!ref.current) return;

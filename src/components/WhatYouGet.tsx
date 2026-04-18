@@ -9,9 +9,9 @@ interface WhatYouGetProps {
 }
 
 const items: { icon: typeof BookOpen; title: TranslationKey; desc: TranslationKey; value: string; color: string }[] = [
-  { icon: BookOpen, title: "item_1_title", desc: "item_1_desc", value: "US$ 97", color: "from-blue-500 to-blue-600" },
-  { icon: Dumbbell, title: "item_2_title", desc: "item_2_desc", value: "US$ 47", color: "from-emerald-500 to-emerald-600" },
-  { icon: Apple, title: "item_3_title", desc: "item_3_desc", value: "US$ 37", color: "from-amber-500 to-orange-500" },
+  { icon: BookOpen, title: "item_1_title", desc: "item_1_desc", value: "US$ 13", color: "from-blue-500 to-blue-600" },
+  { icon: Dumbbell, title: "item_2_title", desc: "item_2_desc", value: "US$ 7", color: "from-emerald-500 to-emerald-600" },
+  { icon: Apple, title: "item_3_title", desc: "item_3_desc", value: "US$ 5", color: "from-amber-500 to-orange-500" },
 ];
 
 export const WhatYouGet = ({ bundleImage }: WhatYouGetProps) => {

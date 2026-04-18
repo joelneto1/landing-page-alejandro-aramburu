@@ -9,7 +9,7 @@ interface FinalCTAProps {
 
 export const FinalCTA = ({ checkoutUrl }: FinalCTAProps) => {
   const sectionRef = useScrollReveal({ stagger: 0.15, y: 30 });
-  const priceRef = useCounterAnimation(181, 27, { duration: 1400, prefix: "US$ " });
+  const priceRef = useCounterAnimation(25, 9, { duration: 1400, prefix: "US$ ", suffix: ".99" });
   const { t } = useLanguage();
 
   return (
@@ -25,7 +25,7 @@ export const FinalCTA = ({ checkoutUrl }: FinalCTAProps) => {
           {t("final_p1")}
         </p>
         <p className="font-sans-body text-[1.15rem] sm:text-xl opacity-95 leading-relaxed mb-8 sm:mb-10 font-medium">
-          {t("final_p2_pre")} <strong ref={priceRef} className="text-yellow-300 text-xl sm:text-2xl">US$ 181</strong>.
+          {t("final_p2_pre")} <strong ref={priceRef} className="text-yellow-300 text-xl sm:text-2xl">US$ 25</strong>.
         </p>
         <div className="gsap-fade">
           <a href={checkoutUrl} className="inline-flex items-center justify-center gap-2 btn-shine cta-gold-pulse font-sans-body font-bold text-gray-900 px-8 py-5 sm:px-12 sm:py-6 rounded-xl sm:rounded-2xl text-xl sm:text-2xl shadow-xl hover:scale-[1.03] transition-transform w-full sm:w-auto text-center" style={{ backgroundColor: 'hsl(38, 85%, 52%)' }}>
