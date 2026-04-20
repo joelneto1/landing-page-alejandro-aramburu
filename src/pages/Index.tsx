@@ -17,7 +17,7 @@ import { FinalCTA } from "@/components/FinalCTA";
 import { FooterSection } from "@/components/FooterSection";
 import { StickyCTA } from "@/components/StickyCTA";
 
-const CHECKOUT_URL = "https://whop.com/checkout/plan_xmEmwmv0c0Arb";
+const CHECKOUT_URL = "https://pay.hotmart.com/A105472950Q?checkoutMode=10&bid=1776717802996";
 
 const Divider = () => <hr className="section-divider" />;
 
