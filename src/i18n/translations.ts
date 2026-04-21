@@ -139,11 +139,11 @@ export const translations = {
     en: "Instant access after payment confirmation.",
   },
   whatyouget_img_alt: {
-    es: "Kit completo El Código de las Arterias Limpias",
+    es: "Kit completo La Guía de las Arterias Limpias",
     en: "Complete Clean Arteries Code kit",
   },
   item_1_title: {
-    es: "E-book: El Código de las Arterias Limpias",
+    es: "E-book: La Guía de las Arterias Limpias",
     en: "E-book: The Clean Arteries Code",
   },
   item_1_desc: {
@@ -249,7 +249,7 @@ export const translations = {
 
   // ── FooterSection ──
   footer_copyright: {
-    es: "El Código de las Arterias Limpias. Todos los derechos reservados.",
+    es: "La Guía de las Arterias Limpias. Todos los derechos reservados.",
     en: "The Clean Arteries Code. All rights reserved.",
   },
   footer_disclaimer: {
@@ -259,7 +259,7 @@ export const translations = {
 
   // ── StickyCTA ──
   sticky_title: {
-    es: "El Código de las Arterias Limpias",
+    es: "La Guía de las Arterias Limpias",
     en: "The Clean Arteries Code",
   },
   sticky_cta: { es: "ACCESO INMEDIATO — US$ 9.99", en: "INSTANT ACCESS — US$ 9.99" },
