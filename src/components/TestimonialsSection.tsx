@@ -3,11 +3,21 @@ import { useScrollReveal } from "@/hooks/useGSAP";
 import { useStaggerReveal, useStarFill } from "@/hooks/useAnime";
 import { useLanguage } from "@/i18n/LanguageContext";
 import type { TranslationKey } from "@/i18n/translations";
+import mariaElenaImg from "@/assets/testimonial-maria-elena.jpeg";
+import joseCarlosImg from "@/assets/testimonial-jose-carlos.jpeg";
+import carmenImg from "@/assets/testimonial-carmen.jpeg";
 
-const testimonials: { text: TranslationKey; name: TranslationKey; location: TranslationKey }[] = [
-  { text: "testimonial_1_text", name: "testimonial_1_name", location: "testimonial_1_location" },
-  { text: "testimonial_2_text", name: "testimonial_2_name", location: "testimonial_2_location" },
-  { text: "testimonial_3_text", name: "testimonial_3_name", location: "testimonial_3_location" },
+type Testimonial = {
+  text: TranslationKey;
+  name: TranslationKey;
+  location: TranslationKey;
+  avatar: string;
+};
+
+const testimonials: Testimonial[] = [
+  { text: "testimonial_1_text", name: "testimonial_1_name", location: "testimonial_1_location", avatar: mariaElenaImg },
+  { text: "testimonial_2_text", name: "testimonial_2_name", location: "testimonial_2_location", avatar: joseCarlosImg },
+  { text: "testimonial_3_text", name: "testimonial_3_name", location: "testimonial_3_location", avatar: carmenImg },
 ];
 
 export const TestimonialsSection = () => {
@@ -35,7 +45,7 @@ export const TestimonialsSection = () => {
   );
 };
 
-function TestimonialCard({ item, t }: { item: { text: TranslationKey; name: TranslationKey; location: TranslationKey }; t: (k: TranslationKey) => string }) {
+function TestimonialCard({ item, t }: { item: Testimonial; t: (k: TranslationKey) => string }) {
   const starsRef = useStarFill();
 
   return (
@@ -49,9 +59,17 @@ function TestimonialCard({ item, t }: { item: { text: TranslationKey; name: Tran
       <p className="font-sans-body text-foreground leading-relaxed mb-4 sm:mb-5 text-sm sm:text-sm italic">
         "{t(item.text)}"
       </p>
-      <div className="pt-3 sm:pt-4 border-t border-border">
-        <p className="font-sans-body font-bold text-foreground text-sm sm:text-sm">{t(item.name)}</p>
-        <p className="font-sans-body text-muted-foreground text-xs sm:text-xs mt-0.5">{t(item.location)}</p>
+      <div className="pt-3 sm:pt-4 border-t border-border flex items-center gap-3">
+        <img
+          src={item.avatar}
+          alt={t(item.name)}
+          loading="lazy"
+          className="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0 ring-2 ring-medical-blue/20"
+        />
+        <div className="min-w-0">
+          <p className="font-sans-body font-bold text-foreground text-sm sm:text-sm truncate">{t(item.name)}</p>
+          <p className="font-sans-body text-muted-foreground text-xs sm:text-xs mt-0.5 truncate">{t(item.location)}</p>
+        </div>
       </div>
     </div>
   );
