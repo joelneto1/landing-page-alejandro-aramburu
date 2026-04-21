@@ -62,7 +62,7 @@ export const translations = {
   // ── OriginStory ──
   origin_doctor_name: { es: "Dr. Alejandro Aramburu", en: "Dr. Alejandro Aramburu" },
   origin_doctor_role: { es: "Cirujano Vascular y Cardiólogo", en: "Vascular Surgeon and Cardiologist" },
-  origin_doctor_exp: { es: "30 años de práctica clínica", en: "30 years of clinical practice" },
+  origin_doctor_exp: { es: "10 años de práctica clínica", en: "10 years of clinical practice" },
   origin_title: {
     es: '"Don Roberto Me Enseñó Más Que Cualquier Libro de Medicina"',
     en: '"Don Roberto Taught Me More Than Any Medical Textbook"',
@@ -88,8 +88,8 @@ export const translations = {
     en: 'After Don Roberto came Doña María, Don Carlos, Doña Inés... Hundreds of patients who avoided the operating room using the same system. I called it the <strong class="text-medical-blue">Continuous Unblocking System</strong>.',
   },
   origin_p5: {
-    es: "Y hoy, por primera vez, estoy poniendo todo lo que aprendí en 30 años dentro de una guía accesible para cualquier persona.",
-    en: "And today, for the first time, I'm putting everything I've learned in 30 years into a guide accessible to anyone.",
+    es: "Y hoy, por primera vez, estoy poniendo todo lo que aprendí en 10 años dentro de una guía accesible para cualquier persona.",
+    en: "And today, for the first time, I'm putting everything I've learned in 10 years into a guide accessible to anyone.",
   },
 
   // ── MechanismSection ──
